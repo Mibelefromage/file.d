@@ -1,32 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>file.d documentation</title>
-  <link rel="icon" type="image/png" href="/file.d/static/file.d.png" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="A blazing fast tool for building data pipelines: read, process, and output events.">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services de Montage Vidéo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 2em;
+        }
+        .portfolio img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'file.d',
-      repo: 'https://github.com/ozontech/file.d',
-      loadSidebar: true,
-      loadNavbar: true,
-      subMaxLevel: 2,
-      maxLevel: 1,
-      coverpage: true,
-      auto2top: true,
-      markdown: {
-        gfm: true
-      }
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify-copy-code"></script>
+    <header>
+        <h1>Services de Montage Vidéo</h1>
+    </header>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="accueil">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur notre site de services de montage vidéo. Nous offrons une gamme de services pour répondre à vos besoins.</p>
+    </div>
+    <div class="container" id="services">
+        <h2>Services</h2>
+        <p>Nous proposons les services suivants :</p>
+        <ul>
+            <li>Montage complet de vidéos avec voix-off</li>
+            <li>Amélioration de vidéos marketing</li>
+            <li>Création de highlight reels</li>
+            <li>Montage de vidéos face caméra</li>
+        </ul>
+    </div>
+    <div class="container portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <img src="portfolio1.jpg" alt="Projet 1">
+        <img src="portfolio2.jpg" alt="Projet 2">
+        <img src="portfolio3.jpg" alt="Projet 3">
+    </div>
+    <div class="container" id="apropos">
+        <h2>À propos</h2>
+        <p>Je m'appelle Mamadou et je suis un monteur vidéo expérimenté avec plus de 2 ans d'expérience dans le domaine.</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <form action="contact.php" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
 </body>
 </html>
